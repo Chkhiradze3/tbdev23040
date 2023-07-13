@@ -1,7 +1,134 @@
-h1 {
+/* tout */
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+} 
+/* orphelin */
+a{
+    text-decoration: underline 2px #fff;
+    color: #fff;
+}
+
+/* header */
+.logo{
+    display: flex;
+}
+.logo img{
+    height: 100px;
+    width: auto;
+}
+.logo p {
+    margin: auto;
+    font-size: 22px;
+    font-weight:400;
+}
+.nav ul{
+    
+    background: #000;
+    display: flex;
+    flex-direction: row;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+}
+.nav li{
+    margin-left: 10px;
+}
+/* content */
+
+.promotion img{
+    width: 100%;
+    height: auto;
+}
+#main{
+    display: flex;
+    width: 100%;
+    margin-bottom: 30px;
+}
+#main h1{
+    margin: 15px 30px;
+}
+#main h2{
+    margin: 20px 40px;
+}
+#main p{
+    margin: 20px 45px;
+}
+.menu{
+    width: 70%;
+}
+#aside{
+    margin-top: 10px;
+    width: 30%;
+    background: #d2d2d2;
+}
+#aside p{
+    text-transform: uppercase;
+}
+
+/* Page tableau */
+table{
+    width: 100%;
+}
+tbody img{
+    height: 200px;
+    width: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media query responsive */
+@media (max-width: 768px) { 
+    #aside{
+        display: none;
+    }
+    .nav ul{
+    
+        background: #000;
+        display: flex;
+        flex-direction: column;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        text-align: center;
+    }    
+
+    .nav li {
+        /* line-height: 30px; */
+        margin-bottom: 10px;
+    }
+
+    .menu{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    
     
 }
 
-div {
-
-}
