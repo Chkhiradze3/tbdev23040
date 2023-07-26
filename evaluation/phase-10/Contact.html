@@ -1,97 +1,116 @@
 <!DOCTYPE html>
+<html lang="en">
+
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content=""Texte html;charset=UTF-8>
-        <title>Contact</title>
-        <link rel="stylesheet" href="">
-        <div class="container">
 
+<head>
+    <meta http-equiv="Content-Type" content="" Texte html;charset=UTF-8>
+    <title>Contact</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>phase 8</title>
+</head>
 
-            <h1>*Ces champs sont obligatoires</h1>
-            
-
-
-    </head>
 <body>
-    <h1>Vos coordonnées</h1>
-    <form method="post" action="taitement.php">
+    <header>
+        <div class="logo">
+            <img src="./assets/image/jarditou_logo.jpg" alt="logo jarditou" srcset="">
+            <p>Tout le jardin</p>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="Tableau.html">Tableau</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <h3>*Ces champs sont obligatoires</h3>
+    </div>
+    <form method="post" action="Contact.php" id="formulaire">
+        <fieldset>
+            <legend>vos coordonnées</legend>
 
+            <div>
+                <label for="nom">Votre nom* :</label>
+                <input type="text" id="nom" name="nom" placeholder required>
+                <br>
+            </div>
 
-        <label>Nom</label>
-        <input type="text" name="Nom">
-
-        <label>Prénom</label>
-        <input type="text" name="Prénom"> <br>
-        
-
-        <br> <label>E-mail</label>
-        <input type="text" name="email">
-
-        <label> Mot de passes</label>
-        <input type="password" name="password">
-
-        <label> De quel pays étes-vous ?</label> <br>
-        <input type="radio" name="pays" value="France"> France <br> <br>
-        <label> De quel ville étes vous ?</label> <br>
-        <input type="radio" name="Ville"value="Ville"> Ville <br> <br>       
-
-        <label> <Etes-vous un homme ou une femme></label> <br>
-        <select name="sexe" id="">
-        <option value="Homme">Homme</option>
-        <option value="Femme">Femme</option>
-        <option value="Autre">Autre</option>
-
-        </select>
-
-        <br><label> Commentaire</label> <br>
-        <input type="submit" value="Envoyer">
-        <textarea rows="10" cols="50"></textarea> <br>
-        <input type="checkbox" name="couleur1" value="Bleu" checked> Bleu
-        <input type="checkbox" name="couleur2" value="Rouge"> Rouge
-        <input type="checkbox" name="couleur3" value="Vert"> Vert
-        <label for="couleur"> Choisissez votre couleur</label>
-
-        <select id="couleur">
-            <option value=""selected>-</option>
-            <option value="Bleu">Bleu</option>
-            <option value="Rouge">Rouge</option>
-            <option value="Vert">Vert</option>
-            </select>
-
-            <form action="destination.php" method="post"enctype="multipart/form"></form-data">
-                <input type="file" name="Fichier">
-            </form>
-
-            <label for="Méties2"> Selectionnez votre métier</label>
-            <input type="text" name="métiers2" id="métiers2"list="métiers3">
-            <datalist id="métiers3">
-            <option value="webmaster">
-            <option value="développeur">
-            <option value="administrateur B.D.D.">
-            <option value="webdesigner"> 
-
+            <label for="prenom">Votre prénom* :</label>
+            <input type="text" id="prenom" name="prenom" placeholder required>
+            </br>
+            <br>
+            <div class="sex">
+                 <label for="sexef">Sexe* :</label>
                 
-                </option>
+                 <span>
+                 <input type="radio" name="sexe" id="sexef">Féminin</input></span>
+                <label for="sexem"></label>
+                <input type="radio" name="sexe" id="sexem">Masculin</input>
+                
+            </div>
+            <div>
+                <label for="date">Date de naissance*:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div>
+                <label for="postal">Code postal* :</label>
+                <input type="text" id="postal" required>
+            </div>
+            <div>
+                <label for="adresse">Adresse :</label>
+                <input type="text" id="adresse">
+            </div>
+            <div>
+                <label for="ville">Ville :</label>
+                <input type="text" id="ville">
+            </div>
+            <div>
+                <label for="email">Email *:</label>
+                <input type="email" id="email" required>
+            </div>
 
-            </datalist>
+        </fieldset>
+      
+        <fieldset>
+            <legend>Votre demande</legend>
+
+
+            <label for="Sujet" > Sujet *:</label>
+            <select name="Sujet" id="Sujet" required>
+                <option value="Veuillez séléciionner un sujet" selected disabled>Veuillez séléctionner un sujet</option>
+             <option value="Question sur un produit">Question sur un produit </option>   
+             <option value="Réclamation">Réclamation </option>
+             <option value="Autres"> Autres</option>
+            </select>
+        <div>
+                <label for="question" >Votre question *:</label>
+                <textarea required>
+
+                </textarea>
+            </div>
             
-                <option value="webmaster">
-                    <option value="développeur">
 
-                        <input type="text" placeholder="Entre votre nom" pattern="^[a-z]+$"required title="Entrez votre nom (que des caractères entre a et z)">
 
-            </datalist>
-            
-            <!-- expemple -->
-            <fieldset>
-                <legend>Vos coordonées</legend>
 
-            </fieldset>
+
+        </fieldset>
+
+        <div class="check">
+        <input type="checkbox" required>* J'accepte le traitement informatique de ce formulaire</input>
+        </div>
+<br><br>
+    <div class="button">
+        <label></label><input type="submit"></input>
+        <label></label> <input type="reset"></input>
+    </div>
+
 
 
     </form>
     <br><br>
 
-    <a href="index.html" target="_parent"> Retour vers la page d'acceil</a>
-    
 </body>
+
+</html>

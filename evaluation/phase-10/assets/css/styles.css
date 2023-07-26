@@ -76,31 +76,44 @@ tbody img{
     height: 200px;
     width: auto;
 }
+/* contact */
+.container{
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+form{
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+form legend {
+    font-size: larger;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+form input{
+    width: 95%;
+    line-height: 20px;
+    margin-top: 10px;
+}
+form label{
+    font-size: 16px;
+    margin:20px;
+}
+.sex input{
+margin: 0;
+margin-bottom: 10px;
+width: 22px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.check input{
+    margin: 20px 0;
+    margin-bottom: 10px;
+    width: 100px;
+}
 
 
 /* media query responsive */

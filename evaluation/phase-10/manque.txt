@@ -1,3 +1,0 @@
-fieldset
-legend - vos coordonnées
-        - Votre demande
